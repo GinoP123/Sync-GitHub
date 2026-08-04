@@ -10,10 +10,10 @@ for directory in settings.repositories:
 		print(f"\nChecking: {directory}")
 
 		cmd = f"cd '{directory}'; "
-		cmd += f"{settings.git_path} pull origin main; "
-		cmd += f"{settings.git_path} add .; "
-		cmd += f"{settings.git_path} commit -m '{settings.message}'; "
-		cmd += f"{settings.git_path} push origin main"
+		cmd += f"git pull origin main; "
+		cmd += f"git add .; "
+		cmd += f"git commit -m '{settings.message}'; "
+		cmd += f"git push origin main"
 
 		sp.run(cmd, shell=True)
 		print()
