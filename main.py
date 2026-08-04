@@ -15,7 +15,7 @@ for directory in settings.repositories:
 		cmd += f"git commit -m '{settings.message}'; "
 		cmd += f"git push origin main"
 
-		sp.run(cmd, shell=True)
-		print()
+		output = sp.run(cmd, shell=True, capture_output=True).stdout.decode()
+		print(output)
 
  
