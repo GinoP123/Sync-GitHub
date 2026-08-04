@@ -12,7 +12,7 @@ for directory in settings.repositories:
 		cmd = f"cd '{directory}'; "
 		cmd += f"{settings.git_path} pull origin main; "
 		cmd += f"{settings.git_path} add .; "
-		cmd += f"{settings.git_path} commit -m '{settings.message}'"
+		cmd += f"{settings.git_path} commit -m '{settings.message}'; "
 		cmd += f"{settings.git_path} push origin main"
 
 		sp.run(cmd, shell=True)
