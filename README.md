@@ -1,4 +1,4 @@
 ```
-git clone https://github.com/GinoP123/RepoSync.git
+git clone https://github.com/GinoP123/Sync-GitHub.git
 cd RepoSync
 ```
