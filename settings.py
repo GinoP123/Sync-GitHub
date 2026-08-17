@@ -1,21 +1,7 @@
 
 message = "Auto Git Update"
+repositories_path = 'text_files/repos.txt'
 
-
-repositories = [
-	'/Users/ginoprasad/Scripts/RepoSync',
-	'/Users/ginoprasad/Scripts/BatteryChecker',
-	'/Users/ginoprasad/Scripts/Web-Crawler',
-	'/Users/ginoprasad/Scripts/ScheduleManager',
-	'/Users/ginoprasad/Scripts/BudgetChecker',
-	'/Users/ginoprasad/Scripts/EcotimeManager',
-	'/Users/ginoprasad/Scripts/StockTracker',
-	'/Users/ginoprasad/Scripts/ADP-Manager',
-	'/Users/ginoprasad/Scripts/EmailManager',
-	'/Users/ginoprasad/Scripts/Nautilus_Scripts',
-	'/Users/ginoprasad/Scripts/ShellBookmarks',
-	'/Users/ginoprasad/Scripts/FileSearch',
-	'/Users/ginoprasad/Scripts/AlarmSetter'
-]
-
-
+### For Ubuntu Settings
+folders_copy = 'text_files/folders_copy.txt'
+copied_folder_destination = "../copied_folders"

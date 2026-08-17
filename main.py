@@ -3,9 +3,13 @@
 import settings
 import subprocess as sp
 import os
+import sys
 
+os.chdir(os.path.dirname(sys.argv[0]))
+with open(settings.repositories_path) as infile:
+	repositories = infile.read().strip().split()
 
-for directory in settings.repositories:
+for directory in repositories:
 	if os.path.isdir(f"{directory}/.git") and directory:
 		print(f"\nChecking: {directory}")
 
