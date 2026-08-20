@@ -18,7 +18,8 @@ for directory in repositories:
 		cmd += f"git add .; "
 		cmd += f"git commit -m '{settings.message}'; "
 		cmd += f"git push origin main"
-
+		print(cmd)
+		
 		output = sp.run(cmd, shell=True, capture_output=True).stdout.decode()
 		print(output)
 
